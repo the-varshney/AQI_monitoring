@@ -1,0 +1,14 @@
+CRITICAL - 2024-07-16 19:36:34 --> ErrorException: Cannot redeclare App\Controllers\Welcome::index()
+[Method: GET, Route: /]
+in APPPATH\Controllers\Welcome.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-16 19:39:36 --> ErrorException: Undefined property: App\Controllers\Welcome::$load
+[Method: GET, Route: /]
+in APPPATH\Controllers\Welcome.php on line 11.
+ 1 APPPATH\Controllers\Welcome.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Welcome::$load', 'C:\\xampp\\htdocs\\AQI2\\app\\Controllers\\Welcome.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
